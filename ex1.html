@@ -37,7 +37,7 @@
                 if (email.indexOf("@") == -1) {
                     errorMessages += "Email must contain the character @.\n"
                 }
-                if (password || password.length == 0) {
+                if (!password || password.length == 0) {
                     errorMessages += "Password must be non-empty.\n"
                 }
                 if (errorMessages.length == 0) {
